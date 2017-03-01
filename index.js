@@ -1,10 +1,25 @@
+//Dependencies
 var express = require('express');
-var application = require('./routes/app');
-
+var path = require('path');
+var home = require('./routes/home');
+var practice = require('./routes/practice');
+var frenchTeam = require('./routes/frenchTeam');
+var competitions = require('./routes/competitions');
+var contact = require('./routes/contact');
+//application express
 var app = express();
 
-app.use('/app', application);
+//config : jade, dossiers view
+app.set('view engine','jade');
+app.set('views', path.join(__dirname, 'views'));
 
+//Lien vers home.js
+app.use('/', home);
+app.use('/pratiquer', practice);
+app.use('/equipesfr', frenchTeam);
+app.use('/competitions', competitions);
+app.use('/contact', contact);
+
+//Port d'écoute
 app.listen('3000');
-
-console.log('APP is ready');
+console.log('Port 3000');
