@@ -66,11 +66,18 @@ header {
     cursor: pointer;
 }
 
-/*----------------------HOME----------------*/
+/*----------------------CAROUSSELLE----------------*/
+
+#home {
+    color: white;
+      width: 80%;
+      text-align: center;
+}
+#home #slider, #home #mediateque {
+    display: inline-block;
+}
 #slider {
     width: 30rem;
-    margin: 0 auto;
-    background: white;
     overflow: hidden;
 }
 
@@ -93,4 +100,77 @@ header {
 @keyframes slidy {
     0% {left: 0rem;}
     50% {left: -30rem;}
+}
+
+#mediateque {
+    background: #212121;
+    margin-top: 1.5rem;
+    margin-left: 1.5rem;
+    position: absolute;
+}
+#mediateque img{
+    width: 13rem;
+    margin: 0 1rem 0 1rem;
+}
+
+#mediateque:hover, #boutique:hover{
+    color: #0277BD;
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+
+#boutique {
+    background: #212121;
+    width: 13rem;
+    text-align: left;
+    margin-top: 1.5rem;
+    margin-left: 16.5rem;
+    text-align: center;
+}
+
+#boutique img {
+    margin-top: 1rem;
+}
+
+#middle #space, #middle #boutique, #middle #search{
+    color: white;
+    display: inline-block;
+}
+
+#space {
+    position: absolute;
+    margin-top: 2rem;
+    margin-left: 3rem;
+}
+#space li{
+    background: darkgrey;
+    padding-top: 0.5rem;
+    padding-left: 1rem;
+    width: 13rem;
+    height: 4vh;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+#space li:hover{
+    background: #BF360C;
+    cursor: pointer;
+}
+
+#search {
+    text-align: center;
+    background: #212121;
+    padding: 0 1rem 0 1rem;
+    position: absolute;
+    margin-top: 2rem;
+    margin-left: 19rem;
+}
+
+#foot {
+    margin-top: 5rem;
+    text-align: center;
+}
+
+#foot img {
+    width: 15rem;
 }
