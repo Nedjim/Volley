@@ -12,6 +12,8 @@ var app = express();
 //config : jade, dossiers view
 app.set('view engine','jade');
 app.set('views', path.join(__dirname, 'views'));
+//dossier static
+app.use(express.static('public'));
 
 //Lien vers home.js
 app.use('/', home);
