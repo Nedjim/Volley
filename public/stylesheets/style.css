@@ -14,6 +14,12 @@ li{
     list-style: none;
 }
 
+h1{
+    text-align: center;
+    color:#424242;
+    font-weight: bold;
+}
+
 /*--------------------HEADER-------------------*/
 header {
     background: rgba(255,255,255,0.8);
@@ -198,11 +204,6 @@ footer li:hover{
     width: 80%;
     margin: 0 auto;
 }
-#practice h1{
-    text-align: center;
-    color:#424242;
-    font-weight: bold;
-}
 
 #practice nav {
     text-align: center;
@@ -220,4 +221,28 @@ footer li:hover{
 
 #practice nav li:hover {
     background: #424242;
+}
+/*-------------------Equipe FR----------------*/
+#equipeFR {
+    background: white;
+    width: 60%;
+    margin: 0 auto;
+    padding: 1rem;
+}
+#equipeFR p {
+    font-size: 0.8rem;
+}
+
+#equipeFR h3 {
+    color: #0D47A1;
+}
+
+#equipeFR h4{
+    font-weight: bold;
+}
+
+#equipeFR img {
+    width: 40rem;
+    margin-top: 1rem;
+    margin-left: 4rem;
 }
