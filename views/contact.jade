@@ -1,5 +1,14 @@
 extends layout
 
 block content
-    h1= title
-    p Welcome to #{title}
+   
+    form
+        h1= title
+
+        input(type="text", placeholder="Nom")
+        input(type="text", placeholder="Nom")
+        input(type="email", placeholder="Email")
+        textarea(placeholder="Message")
+        input(type="submit")
+
+   

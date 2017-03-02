@@ -177,6 +177,7 @@ footer {
     margin-top: 2rem;
     color: white;
     text-align: center;
+    font-size: 0.8rem;
 }
 footer #slide {
     margin-top: 5rem;
@@ -246,3 +247,42 @@ footer li:hover{
     margin-top: 1rem;
     margin-left: 4rem;
 }
+
+form {
+    background: white;
+    width: 40%;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+form input{
+    display: block;
+}
+
+form input[type='text'], form input[type='email'] {
+    width: 80%;
+    height: 1.5rem;
+    margin-bottom: 1rem;
+    margin-left: 3rem;
+}
+
+textarea {
+    width: 80%;
+    height: 15rem;
+    margin-bottom: 0.5rem;
+}
+
+form input[type='submit'] {
+    border: none;
+    background: #0D47A1;
+    color: white;
+    width: 5rem;
+    height: 3rem;
+    margin: 0 auto;
+    font-size: 1rem;
+}
+ form input[type='submit']:hover {
+     cursor: pointer;
+ }
