@@ -113,7 +113,7 @@ header {
     margin: 0 1rem 0 1rem;
 }
 
-#mediateque:hover, #boutique:hover{
+#mediateque:hover, #boutique:hover, #search:hover{
     color: #0277BD;
     transition-duration: 0.5s;
     cursor: pointer;
@@ -166,11 +166,58 @@ header {
     margin-left: 19rem;
 }
 
-#foot {
+/*---------------------FOOTER---------------*/
+footer {
+    margin-top: 2rem;
+    color: white;
+    text-align: center;
+}
+footer #slide {
     margin-top: 5rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+footer #slide img {
+    width: 15rem;
+}
+footer li {
+    display: inline-block;
+    margin-right: 2rem; 
+}
+footer li:last-child {
+    margin-right: 0rem;
+}
+
+footer li:hover{
+    text-decoration: underline;
+}
+
+/*------------PRACTICE-------------*/
+#practice {
+    color: white;
+    width: 80%;
+    margin: 0 auto;
+}
+#practice h1{
+    text-align: center;
+    color:#424242;
+    font-weight: bold;
+}
+
+#practice nav {
     text-align: center;
 }
 
-#foot img {
+#practice nav li {
+    display: inline-block;
+    padding-top: 0.3rem;
+    background: rgba(50,20,6,0.5);;
     width: 15rem;
+    height: 2rem; 
+    margin: 1rem;
+    font-weight: bold;
+}
+
+#practice nav li:hover {
+    background: #424242;
 }
