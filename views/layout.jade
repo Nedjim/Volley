@@ -5,7 +5,8 @@ html
         link(rel='stylesheet', href='/stylesheets/style.css', type='text/css')
     body
         header
-            img(src='/img/logo-ffvb.png')
+            a(href='/') 
+                img(src='/img/logo-ffvb.png')
             #social
                 img(src='/img/facebook.png')
                 img(src='/img/twitter.png')
@@ -14,11 +15,16 @@ html
                 p Recevez toute l'actualité FFVB, inscrivez-vous!
                 input(type='text', placeholder='Votre adresse mail')
         nav#navigation
-            li FFVB
-            li Pratiquer
-            li Equipes de France
-            li Compétitions
-            li Contact
+            li 
+                a(href="/") FFVB
+            li 
+                a(href="/pratiquer") Pratiquer
+            li 
+                a(href='/equipesfr') Equipes de France
+            li 
+                a(href='/competitions') Compétitions
+            li 
+                a(href='/contact') Contact
 
         block content
 
