@@ -1,6 +1,7 @@
 //Dependencies
 var express = require('express');
 var path = require('path');
+var port = process.env.PORT || 3000;
 
 var home = require('./routes/home');
 var practice = require('./routes/practice');
@@ -23,5 +24,5 @@ app.use('/equipesfr', frenchTeam);
 app.use('/competitions', competitions);
 app.use('/contact', contact);
 
-app.listen('3000');
-console.log('Port 3000');
+app.listen(port);
+console.log('Port'+ port);
